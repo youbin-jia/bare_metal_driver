@@ -1,4 +1,4 @@
-CROSS_COMPILE 	?= arm-linux-gnueabihf-
+CROSS_COMPILE 	?= arm-none-linux-gnueabihf-
 TARGET		  	?= icm20608
 
 CC 				:= $(CROSS_COMPILE)gcc
@@ -6,7 +6,7 @@ LD				:= $(CROSS_COMPILE)ld
 OBJCOPY 		:= $(CROSS_COMPILE)objcopy
 OBJDUMP 		:= $(CROSS_COMPILE)objdump
 
-LIBPATH			:= -lgcc -L /usr/local/arm/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/4.9.4
+LIBPATH			:= -lgcc -L /usr/local/arm/gcc-arm-10.3-2021.07-aarch64-arm-none-linux-gnueabihf/lib/gcc/arm-none-linux-gnueabihf/10.3.1
 
 
 INCDIRS 		:= imx6ul \

@@ -1,4 +1,4 @@
-CROSS_COMPILE ?= arm-linux-gnueabihf-
+CROSS_COMPILE ?= arm-none-linux-gnueabihf-
 NAME		  ?= ledc
 
 CC 		:= $(CROSS_COMPILE)gcc
